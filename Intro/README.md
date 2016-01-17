@@ -13,15 +13,20 @@ There are three event listeners that are commented out, uncommenting them will a
 ## Getting started
 The samples here do not require a web server so to run these just run the file directly in your web browser.  If you have git installed, fork and clone this repository. If you do not have git, simply download the zip file, extract it, and open the index.html file in your browser.
 
+### Tools
+[git](https://git-scm.com/downloads) is a tool for source control   
+[atom](https://atom.io/) is a simple editor for writing code  
+[brackets](http://brackets.io/) is another editor but includes a built in webserver  
+[node](https://nodejs.org/en/) is JavaScript runtime that can be used to run a webserver  
 
 
-### Apps
+## Apps
 * Kodable (Ages 6-8)
 * Hopscotch (Ages 9-11)
 * Tynker (Ages 9-11)
 * Scryptkit (Ages 17+)
 
 
-### References
+## References
 https://developer.mozilla.org/en-US/Learn/Getting_started_with_the_web  
 http://www.diygenius.com/6-ipad-apps-for-learning-how-to-code/#
