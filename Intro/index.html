@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Intro</title>
+  <style>
+    .box {
+      height: 50px;
+      width: 50px;
+      position: absolute;
+      background-color: blue;
+      transition: transform 1s;
+    }
+
+    .line {
+      height: 5px;
+      width: 5px;
+      background-color: green;
+      position: absolute;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="box" class="box"></div>
+</body>
+
+</html>
+
+
+
+
+<script>
+  "use strict";
+  //document.addEventListener('click', moveElement);
+  //document.addEventListener('mousemove', makeLine);
+  //document.addEventListener('keydown', keydown);
+
+  function keydown(event) {
+    //pressed the lowercase 'c'
+    if (event.keyCode === 67) {
+      clearLines();
+    }
+    //console.log(event.keyCode);
+  }
+
+  function clearLines(){
+    let segments = document.querySelectorAll('div.line');
+    for (let i = 0; i < segments.length; ++i) {
+      let segment = segments[i];
+      document.body.removeChild(segment);
+    }
+  }
+
+  function moveElement(event) {
+    let box = document.querySelector('#box');
+    box.style.transform = 'translateY(' + (event.clientY - 25) + 'px)';
+    box.style.transform += 'translateX(' + (event.clientX - 25) + 'px)';
+  }
+
+  function makeLine() {
+    let line = document.createElement("div");
+    line.className = 'line';
+    line.style.left = event.clientX + 'px';
+    line.style.top = event.clientY + 'px'
+    document.body.appendChild(line);
+  }
+</script>
